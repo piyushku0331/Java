@@ -11,5 +11,4 @@ public class FunctionalInterface {
         obj.display("Piyush");
     }
 }
-
 // lambda function works on functional interface(Interface containing one method)
