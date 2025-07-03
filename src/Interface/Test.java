@@ -1,11 +1,11 @@
 package Interface;
 
-interface abc{
-    void display();
-    void show();
+abstract class abc{
+    abstract void display();
+    abstract void show();
 }
 
-class xyz implements abc{
+class xyz extends abc{
     public void display(){
         System.out.println("Hello from display from xyz");
     }
@@ -16,18 +16,19 @@ class xyz implements abc{
 
 public class Test {
     public static void main(String[] args) {
-        abc obj = new abc(){
-            public void display(){
-                System.out.println("Hello from Display");
-            }
-            public void show(){
-                System.out.println("Hello from show");
-            }
-        };
+//        abc obj = new abc(){
+//            public void display(){
+//                System.out.println("Hello from Display");
+//            }
+//            public void show(){
+//                System.out.println("Hello from show");
+//            }
+//        };
         xyz obj2 = new xyz();
-        obj.show();
-        obj.display();
+//        obj.show();
+//        obj.display();
         obj2.display();
         obj2.show();
     }
 }
+
