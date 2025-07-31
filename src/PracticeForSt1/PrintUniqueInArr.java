@@ -14,7 +14,7 @@ public class PrintUniqueInArr {
                 list.add(entry.getKey());
             }
         }
-        return list;
+        return list.reversed();
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
